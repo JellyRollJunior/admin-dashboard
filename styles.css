@@ -25,10 +25,17 @@
 
 .top-header {
   display: grid;
-  grid-template-columns: 25px 1fr 25px 35px 100px;
+  grid-template-columns: 20px 1fr 20px 35px 100px;
   gap: 20px;
   margin-bottom: 32px;
   align-items: center;
+}
+
+.magnifying-glass {
+  height: 20px;
+  background-image: url(icons-svg/magnify.svg);
+  border: none;
+  background-color: white;
 }
 
 .search-bar {
@@ -44,6 +51,13 @@
   box-shadow: 3px 3px 8px -2px #a2a4a9;
 }
 
+.notification-bell {
+  height: 20px;
+  background-image: url(icons-svg/bell-ring-outline.svg);
+  border: none;
+  background-color: white;
+}
+
 .top-header > .user-icon {
   height: 35px;
 }
@@ -53,7 +67,10 @@
 }
 
 .user-icon {
-  border: 2px solid black;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
 }
 
 .bottom-header {
@@ -65,6 +82,10 @@
 
 .bottom-header > .user-icon {
   height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
 }
 
 .bottom-header .username {
