@@ -18,9 +18,12 @@
 }
 
 .header {
+  --header-background-color: white;
+
   position: relative;
   padding: 14px 35px;
   box-shadow: 0px 5px 5px -2px #d5d7dc;
+  background-color: var(--header-background-color);
 }
 
 .top-header {
@@ -31,11 +34,14 @@
   align-items: center;
 }
 
-.magnifying-glass {
+.icon-button {
   height: 20px;
-  background-image: url(icons-svg/magnify.svg);
   border: none;
-  background-color: white;
+  background-color: var(--header-background-color);
+}
+
+.magnifying-glass {
+  background-image: url(icons-svg/magnify.svg);
 }
 
 .search-bar {
@@ -52,25 +58,22 @@
 }
 
 .notification-bell {
-  height: 20px;
   background-image: url(icons-svg/bell-ring-outline.svg);
-  border: none;
-  background-color: white;
+}
+
+.user-icon {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
 }
 
 .top-header > .user-icon {
   height: 35px;
+  width: 35px;
 }
 
 .username {
   font-weight: bold;
-}
-
-.user-icon {
-  width: 35px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: left;
 }
 
 .bottom-header {
@@ -83,9 +86,6 @@
 .bottom-header > .user-icon {
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: left;
 }
 
 .bottom-header .username {
