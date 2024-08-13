@@ -17,7 +17,6 @@
 }
 
 .header {
-  height: 100px;
   padding: 12px 50px 10px 50px;
 }
 
@@ -25,6 +24,8 @@
   display: grid;
   grid-template-columns: 25px 1fr 25px 35px 100px;
   gap: 14px;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .search-bar {
@@ -42,6 +43,13 @@
 
 .user-icon {
   border: 2px solid black;
+}
+
+.bottom-header {
+  display: grid;
+  grid-template-columns: 50px 1fr 70px 70px 70px;
+  gap: 20px;
+  align-items: center;
 }
 
 .main-content {
