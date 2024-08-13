@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  font-size: 14px;
 }
 
 .container {
@@ -17,14 +18,14 @@
 }
 
 .header {
-  padding: 12px 50px 10px 50px;
+  padding: 16px 50px;
 }
 
 .top-header {
   display: grid;
   grid-template-columns: 25px 1fr 25px 35px 100px;
   gap: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   align-items: center;
 }
 
@@ -41,15 +42,42 @@
   box-shadow: 3px 3px 8px -2px #a2a4a9;
 }
 
+.username {
+  font-weight: bold;
+}
+
+.top-header > .username {
+  text-align: center;
+}
+
 .user-icon {
   border: 2px solid black;
 }
 
 .bottom-header {
   display: grid;
-  grid-template-columns: 50px 1fr 70px 70px 70px;
+  grid-template-columns: 50px 1fr repeat(3, 75px);
   gap: 20px;
   align-items: center;
+}
+
+.bottom-header > .user-icon {
+  height: 50px;
+}
+
+.bottom-header .username {
+  font-size: 1.3rem;
+}
+
+.greeting {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.menu-button {
+  border-radius: 25px;
+  padding: 8px 12px;
+  border: none;
 }
 
 .main-content {
