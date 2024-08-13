@@ -19,7 +19,21 @@
 .header {
   background-color: palevioletred;
   height: 100px;
+  padding: 12px 50px 10px 50px;
+}
 
+.top-header {
+  display: grid;
+  grid-template-columns: 25px 1fr 25px 35px 100px;
+  gap: 14px;
+}
+
+.search-bar {
+  margin-right: 90px;
+}
+
+.user-icon {
+  border: 2px solid black;
 }
 
 .main-content {
