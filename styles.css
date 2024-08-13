@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+  grid-row: 1 / 3;
+  background-color: paleturquoise;
+  height: 300px;
+}
+
+.header {
+  background-color: palevioletred;
+  height: 100px;
+
+}
+
+.main-content {
+  background-color: palegreen;
+  height: 200px;
+}
