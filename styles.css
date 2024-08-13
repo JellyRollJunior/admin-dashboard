@@ -17,7 +17,6 @@
 }
 
 .header {
-  background-color: palevioletred;
   height: 100px;
   padding: 12px 50px 10px 50px;
 }
@@ -30,6 +29,15 @@
 
 .search-bar {
   margin-right: 90px;
+  padding-left: 8px;
+  height: 22px;
+  border-radius: 25px;
+  border: none;
+  background-color: #e5e7eb;
+}
+
+.search-bar:focus {
+  box-shadow: 3px 3px 8px -2px #a2a4a9;
 }
 
 .user-icon {
