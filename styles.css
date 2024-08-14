@@ -39,9 +39,13 @@
 }
 
 .sidebar-item > img {
-  border: 2px solid black;
   height: 24px;
   width: 24px;
+}
+
+.sidebar-title > img {
+  height: 36px;
+  width: 36px;
 }
 
 .header {
@@ -50,6 +54,7 @@
   position: relative;
   padding: 14px 35px;
   box-shadow: 0px 5px 5px -2px #d5d7dc;
+  display: grid;
   background-color: var(--header-background-color);
 }
 
