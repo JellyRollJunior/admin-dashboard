@@ -13,6 +13,10 @@
 
 .sidebar {
   grid-row: 1 / 3;
+  --sidebar-item-height: 35px;
+
+  display: grid;
+  grid-template-rows: calc(var(--sidebar-item-height) * 2) repeat(10, var(--sidebar-item-height));
   background-color: paleturquoise;
 }
 
