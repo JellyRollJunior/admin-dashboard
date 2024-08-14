@@ -20,6 +20,25 @@
   background-color: paleturquoise;
 }
 
+.sidebar-item {
+  margin-left: 12px;
+}
+
+.sidebar-item > div {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sidebar-title > div {
+  font-size: 1.5rem;
+}
+
+.sidebar-item > img {
+  border: 2px solid black;
+  height: 24px;
+  width: 24px;
+}
+
 .header {
   --header-background-color: white;
 
