@@ -17,11 +17,16 @@
 
   display: grid;
   grid-template-rows: calc(var(--sidebar-item-height) * 2) repeat(10, var(--sidebar-item-height));
+  gap: 2px;
   background-color: paleturquoise;
 }
 
 .sidebar-item {
   margin-left: 12px;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  gap: 14px;
+  align-items: center;
 }
 
 .sidebar-item > div {
