@@ -13,39 +13,31 @@
 
 .sidebar {
   grid-row: 1 / 3;
-  --sidebar-item-height: 35px;
+  padding: 10px 0 0 14px;
 
+  --sidebar-item-height: 35px;
+  --sidebar-icon-size: 20px;
   display: grid;
-  grid-template-rows: calc(var(--sidebar-item-height) * 2) repeat(10, var(--sidebar-item-height));
-  gap: 2px;
+  grid-template-columns: var(--sidebar-icon-size) 1fr;
+  grid-template-rows: repeat(12, var(--sidebar-item-height));
+  gap: 0 16px;
+  align-items: center;
   background-color: paleturquoise;
 }
 
-.sidebar-item {
-  margin-left: 12px;
-  display: grid;
-  grid-template-columns: 25px 1fr;
-  gap: 14px;
-  align-items: center;
-}
-
-.sidebar-item > div {
+.sidebar > div {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.sidebar-title > div {
-  font-size: 1.5rem;
+.sidebar > .sidebar-title {
+  font-size: 1.4rem;
 }
 
-.sidebar-item > img {
-  height: 24px;
-  width: 24px;
-}
-
-.sidebar-title > img {
-  height: 36px;
-  width: 36px;
+.sidebar-title.image {
+  height: calc(var(--sidebar-icon-size) * 1.7);
+  width: calc(var(--sidebar-icon-size) * 1.7);
+  justify-self: center;
 }
 
 .header {
