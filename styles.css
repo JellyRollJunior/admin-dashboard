@@ -147,6 +147,19 @@
 }
 
 .main-content {
+  --secondary-content-width: 300px;
+
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr var(--secondary-content-width);
+  align-self: stretch;
   background-color: #e9ebef;
-  height: 200px;
+}
+
+.main-content > div {
+  border: 2px solid black
+}
+
+.projects {
+  grid-row: 1 / 3;
 }
