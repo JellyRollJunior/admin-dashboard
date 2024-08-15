@@ -10,6 +10,7 @@
   --header-height: 165px;
   --header-background-color: white;
   --sidebar-width: 240px;
+  --main-content-background-color: #e9ebef;
 
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
@@ -152,7 +153,7 @@
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr var(--secondary-content-width);
-  background-color: #e9ebef;
+  background-color: var(--main-content-background-color);
 }
 
 .main-content > div {
@@ -176,7 +177,7 @@
 }
 
 .card {
-  --card-button-size: 22px;
+  --card-button-size: 24px;
 
   padding: 24px;
   height: 200px;
@@ -206,4 +207,18 @@
 .card-buttons > button {
   width: var(--card-button-size);
   height: var(--card-button-size);
+  border: none;
+  background-color: var(--main-content-background-color);
+}
+
+.card-buttons > .star {
+  background-image: url(icons/star-plus-outline.svg);
+}
+
+.card-buttons > .view {
+  background-image: url(icons/eye-plus-outline.svg);
+}
+
+.card-buttons > .fork {
+  background-image: url(icons/source-fork.svg);
 }
