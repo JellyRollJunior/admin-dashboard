@@ -176,5 +176,34 @@
 }
 
 .card {
+  --card-button-size: 22px;
+
+  padding: 24px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 22px 1fr var(--card-button-size);
   border: solid 2px red;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card > p {
+  font-size: 1.1rem;
+}
+
+.card-buttons {
+  align-self: flex-end;
+  justify-self: end;
+
+  display: grid;
+  grid-template-columns: repeat(3, var(--card-button-size));
+  gap: 20px;
+}
+
+.card-buttons > button {
+  width: var(--card-button-size);
+  height: var(--card-button-size);
 }
