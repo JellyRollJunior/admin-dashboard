@@ -9,10 +9,11 @@
 .container {
   --header-height: 165px;
   --header-background-color: white;
-  
+
   display: grid;
   grid-template-columns: 230px 1fr;
   grid-template-rows: var(--header-height) 1fr;
+  height: 100vh;
 }
 
 .sidebar {
