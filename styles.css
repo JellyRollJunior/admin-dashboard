@@ -164,7 +164,15 @@
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 40px;
   gap: 0px 0px;
+}
+
+.project-title {
+  grid-column: 1 / -1;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .card {
