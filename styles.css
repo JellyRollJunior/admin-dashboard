@@ -9,6 +9,7 @@
 .container {
   display: grid;
   grid-template-columns: 230px 1fr;
+  grid-template-rows: 160px 1fr;
 }
 
 .sidebar {
@@ -54,6 +55,7 @@
   box-shadow: 0px 5px 5px -2px #d5d7dc;
   display: grid;
   background-color: var(--header-background-color);
+  height: 160px;
 }
 
 .top-header {
@@ -74,7 +76,7 @@
 }
 
 .magnifying-glass {
-  background-image: url(icons-svg/magnify.svg);
+  background-image: url(icons/magnify.svg);
 }
 
 .search-bar {
@@ -91,7 +93,7 @@
 }
 
 .notification-bell {
-  background-image: url(icons-svg/bell-ring-outline.svg);
+  background-image: url(icons/bell-ring-outline.svg);
 }
 
 .user-icon {
@@ -111,7 +113,7 @@
 }
 
 .bottom-header {
-  --user-icon-size: 65px;
+  --user-icon-size: 60px;
   --button-size: 85px;
 
   margin-right: 30px;
