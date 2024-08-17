@@ -191,15 +191,17 @@
 
   display: grid;
   grid-template-rows: 22px 1fr var(--card-button-size);
+  gap: 8px;
 }
 
 .card-title {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
-.projects > p {
-  font-size: 1.1rem;
+.projects p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 .card-buttons {
