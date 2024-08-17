@@ -187,7 +187,6 @@
   border-radius: 10px;
   padding: 24px;
   background-color: var(--card-background-color);
-  border: solid 2px red;
 }
 
 .projects .card {
