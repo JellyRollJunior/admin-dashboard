@@ -7,11 +7,19 @@
 }
 
 .container {
-  --header-height: 165px;
+  /* Theme colors */
   --header-background-color: white;
-  --sidebar-width: 240px;
   --main-content-background-color: #e9ebef;
+  --project-card-stripe-color: rgb(255, 191, 0);
+  --card-background-color: white;
+  --sidebar-color: #0197f6;
+  --sidebar-item-color: white;
+  --search-bar-color: #e9ebef;
+  --search-bar-color-focus: #a2a4a9;
   --box-shadow-color: #d5d7dc;
+
+  --header-height: 165px;
+  --sidebar-width: 240px;
 
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
@@ -30,17 +38,18 @@
   grid-template-rows: repeat(12, var(--sidebar-item-height));
   gap: 0 24px;
   align-items: center;
-  background-color: #0197f6;
+  background-color: var(--sidebar-color);
 }
 
 .sidebar > img {
+  /* Make sidebar icons white */
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(79deg) brightness(101%) contrast(101%);
 }
 
 .sidebar > div {
   font-size: 1.3rem;
   font-weight: bold;
-  color: white;
+  color: var(--sidebar-item-color);
   letter-spacing: 0.7px;
 }
 
@@ -90,11 +99,11 @@
   height: 28px;
   border-radius: 25px;
   border: none;
-  background-color: #e9ebef;
+  background-color: var(--search-bar-color);
 }
 
 .search-bar:focus {
-  box-shadow: 3px 3px 8px -2px #a2a4a9;
+  box-shadow: 3px 3px 8px -2px var(--search-bar-color-focus);
 }
 
 .notification-bell {
@@ -154,10 +163,8 @@
   --content-title-size: 40px;
   --title-content-gap: 8px;
   --user-icon-size: 60px;
-  --card-background-color: white;
   --card-button-size: 24px;
   --card-gap: 24px;
-  --project-card-stripe-color: rgb(255, 191, 0);
 
   padding: 20px 20px 100px 20px;
   display: grid;
