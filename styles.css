@@ -250,7 +250,7 @@
 }
 
 .trending {
-  --user-icon-size: 55px;
+  --user-icon-size: 60px;
 
   display: grid;
   grid-template-rows: var(--content-title-size) 1fr;
@@ -281,4 +281,9 @@
 .user .bio {
   align-self: flex-start;
   color: #545454;
+  font-size: 1.1rem;
+}
+
+.user .handle {
+  font-size: 1.1rem;
 }
