@@ -154,6 +154,7 @@
   padding: 20px 20px 100px 20px;
   display: grid;
   grid-template-columns: 1fr var(--secondary-content-width);
+  grid-template-rows: 1fr 1fr;
   background-color: var(--main-content-background-color);
   gap: 24px;
 }
@@ -233,3 +234,4 @@
   display: grid;
   grid-template-rows: var(--content-title-size) 1fr;
 }
+
