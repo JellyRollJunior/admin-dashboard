@@ -261,12 +261,22 @@
 
 }
 .trending {
+  --user-icon-size: 55px;
+
   display: grid;
   grid-template-rows: var(--content-title-size) 1fr;
 }
 
+.user {
+  display: grid;
+  grid-template-columns: var(--user-icon-size) 1fr;
+  grid-template-rows: repeat(2, calc(var(--user-icon-size) / 2));
+  align-items: end;
+}
+
 .user img {
-  height: 45px;
-  width: 45px;
+  grid-row: 1 / 3;
+  height: var(--user-icon-size);
+  width: var(--user-icon-size);
   border: 2px solid red;
 }
