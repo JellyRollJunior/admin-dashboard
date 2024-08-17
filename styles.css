@@ -155,6 +155,7 @@
   display: grid;
   grid-template-columns: 1fr var(--secondary-content-width);
   background-color: var(--main-content-background-color);
+  gap: 24px;
 }
 
 .main-content > div {
@@ -167,7 +168,7 @@
   grid-template-rows: var(--content-title-size) 1fr;
 }
 
-.project-title {
+.main-content .title {
   align-self: center;
   font-size: 1.5rem;
   font-weight: 550;
@@ -226,4 +227,9 @@
 
 .card-buttons > .fork {
   background-image: url(icons/source-fork.svg);
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: var(--content-title-size) 1fr;
 }
