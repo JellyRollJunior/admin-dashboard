@@ -273,7 +273,7 @@
   display: grid;
   grid-template-columns: var(--user-icon-size) 1fr;
   grid-template-rows: repeat(2, calc(var(--user-icon-size) / 2));
-  gap: 0 24px;
+  gap: 0 16px;
   align-items: end;
 }
 
@@ -282,9 +282,9 @@
   height: var(--user-icon-size);
   width: var(--user-icon-size);
   border-radius: 50%;
-  border: 2px solid red;
 }
 
 .user .bio {
   align-self: flex-start;
+  color: #545454;
 }
