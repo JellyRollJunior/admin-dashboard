@@ -151,9 +151,11 @@
   --secondary-content-height: 400px;
   --secondary-content-width: 300px;
   --content-title-size: 40px;
-  --card-gap: 24px;
-  --title-gap: 8px;
+  --title-content-gap: 8px;
   --user-icon-size: 60px;
+  --card-background-color: white;
+  --card-button-size: 24px;
+  --card-gap: 24px;
 
   padding: 20px 20px 100px 20px;
   display: grid;
@@ -166,7 +168,7 @@
 .title-content-grid {
   display: grid;
   grid-template-rows: var(--content-title-size) 1fr;
-  gap: var(--title-gap);
+  gap: var(--title-content-gap);
 }
 
 .projects {
@@ -186,16 +188,12 @@
 }
 
 .card {
-  --card-background-color: white;
-
   border-radius: 10px;
   padding: 32px;
   background-color: var(--card-background-color);
 }
 
 .projects .card {
-  --card-button-size: 24px;
-
   display: grid;
   grid-template-rows: 22px 1fr var(--card-button-size);
   gap: 8px;
