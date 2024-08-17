@@ -168,7 +168,7 @@
 
 .main-content .title {
   align-self: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 550;
 }
 
@@ -246,11 +246,7 @@
 
 .announcement > div {
   font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.announcement > p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .trending {
