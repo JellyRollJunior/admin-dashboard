@@ -185,12 +185,13 @@
   --card-button-size: 24px;
   --card-background-color: white;
 
+  border-radius: 10px;
   padding: 24px;
+  background-color: var(--card-background-color);
+  border: solid 2px red;
+
   display: grid;
   grid-template-rows: 22px 1fr var(--card-button-size);
-  background-color: var(--card-background-color);
-  border-radius: 10px;
-  border: solid 2px red;
 }
 
 .card-title {
@@ -235,3 +236,24 @@
   grid-template-rows: var(--content-title-size) 1fr;
 }
 
+.announcement-container {
+  --card-background-color: white;
+
+  border-radius: 10px;
+  padding: 0 24px;
+  background-color: var(--card-background-color);
+  border: solid 2px red;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.announcement > div {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.announcement > p {
+  font-size: 0.9rem;
+}
