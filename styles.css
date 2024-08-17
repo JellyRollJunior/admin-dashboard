@@ -254,3 +254,19 @@
 .announcement > p {
   font-size: 0.9rem;
 }
+
+.user-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+}
+.trending {
+  display: grid;
+  grid-template-rows: var(--content-title-size) 1fr;
+}
+
+.user img {
+  height: 45px;
+  width: 45px;
+  border: 2px solid red;
+}
