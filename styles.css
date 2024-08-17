@@ -148,6 +148,7 @@
 }
 
 .main-content {
+  --secondary-content-height: 400px;
   --secondary-content-width: 300px;
   --content-title-size: 40px;
 
