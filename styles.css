@@ -182,13 +182,16 @@
 }
 
 .card {
-  --card-button-size: 24px;
   --card-background-color: white;
 
   border-radius: 10px;
   padding: 24px;
   background-color: var(--card-background-color);
   border: solid 2px red;
+}
+
+.projects .card {
+  --card-button-size: 24px;
 
   display: grid;
   grid-template-rows: 22px 1fr var(--card-button-size);
@@ -199,7 +202,7 @@
   font-size: 1.3rem;
 }
 
-.card > p {
+.projects > p {
   font-size: 1.1rem;
 }
 
@@ -237,13 +240,7 @@
 }
 
 .announcement-container {
-  --card-background-color: white;
-
-  border-radius: 10px;
   padding: 0 24px;
-  background-color: var(--card-background-color);
-  border: solid 2px red;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
