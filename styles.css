@@ -247,16 +247,9 @@
   background-color: var(--card-background-color);
 }
 
-.card-buttons > .star {
-  background-image: url(icons/star-plus-outline.svg);
-}
-
-.card-buttons > .view {
-  background-image: url(icons/eye-plus-outline.svg);
-}
-
-.card-buttons > .fork {
-  background-image: url(icons/source-fork.svg);
+.card-buttons img {
+  width: var(--card-button-size);
+  height: var(--card-button-size);
 }
 
 .announcement-container {
