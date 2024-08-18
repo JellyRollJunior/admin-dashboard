@@ -88,10 +88,14 @@
   height: var(--button-size);
   background-color: var(--header-background-color);
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.magnifying-glass {
-  background-image: url(icons/magnify.svg);
+.icon-button > img {
+  height: var(--button-size);
+  width: var(var(--button-size));
 }
 
 .search-bar {
@@ -105,10 +109,6 @@
 
 .search-bar:focus {
   box-shadow: 3px 3px 8px -2px var(--search-bar-color-focus);
-}
-
-.notification-bell {
-  background-image: url(icons/bell-ring-outline.svg);
 }
 
 .user-icon {
