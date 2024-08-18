@@ -8,15 +8,17 @@
 
 .container {
   /* Theme colors */
-  --header-background-color: white;
-  --main-content-background-color: #e9ebef;
-  --project-card-stripe-color: rgb(255, 191, 0);
-  --card-background-color: white;
-  --sidebar-color: #0197f6;
-  --sidebar-item-color: white;
-  --search-bar-color: #e9ebef;
-  --search-bar-color-focus: #a2a4a9;
-  --box-shadow-color: #d5d7dc;
+  --header-background-color: #FFF9E9;
+  --main-content-background-color: #d5a876;
+  --project-card-stripe-color: #FFB400;
+  --card-background-color: #FFF9E9;
+  --sidebar-color: #5A8100;
+  --sidebar-item-color: #FFF9E9;
+  --search-bar-color: #d5a876;
+  --search-bar-color-focus: #545454;
+  --header-button-color: #5A8100;
+  --header-button-text-color: #FFF9E9;
+  --box-shadow-color: #545454;
 
   --header-height: 165px;
   --sidebar-width: 260px;
@@ -42,8 +44,8 @@
 }
 
 .sidebar > img {
-  /* Make sidebar icons white */
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(79deg) brightness(101%) contrast(101%);
+  /* Make sidebar icons #FFF9E9 */
+  filter: invert(99%) sepia(93%) saturate(311%) hue-rotate(323deg) brightness(106%) contrast(105%);
 }
 
 .sidebar > div {
@@ -160,6 +162,8 @@
   border-radius: 25px;
   border: none;
   font-size: 1.1rem;
+  background-color: var(--header-button-color);
+  color: var(--header-button-text-color);
 }
 
 .main-content {
