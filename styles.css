@@ -66,10 +66,18 @@
   justify-self: center;
 }
 
-.header {
+.header-wrapper {
+  display: flex;
   position: relative;
-  padding: 14px 35px 16px 45px;
+  justify-content: center;
+  background-color: #FFF9E9;
   box-shadow: 0px 5px 5px -2px var(--box-shadow-color);
+}
+
+.header {
+  flex: 1;
+  max-width: 1500px;
+  padding: 14px 35px 16px 45px;
   display: grid;
   background-color: var(--header-background-color);
   height: var(--header-height);
