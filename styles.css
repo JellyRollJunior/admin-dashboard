@@ -74,7 +74,7 @@
 
 .top-header {
   --button-size: 24px;
-  --user-icon-size: 45px;
+  --user-icon-size: 50px;
 
   display: grid;
   grid-template-columns: var(--button-size) 1fr var(--button-size) var(--user-icon-size) 140px;
@@ -121,9 +121,12 @@
   width: var(--user-icon-size);
 }
 
-.username {
+.header div {
   font-weight: bold;
-  font-size: 1.2rem;
+}
+
+.top-header .username {
+  font-size: 1.3rem;
 }
 
 .bottom-header {
@@ -142,19 +145,19 @@
   width: var(--user-icon-size);
 }
 
-.bottom-header .username {
-  font-size: 1.5rem;
+.bottom-header .greeting {
+  font-size: 1.2rem;
 }
 
-.greeting {
-  font-weight: bold;
+.bottom-header .username {
+  font-size: 1.7rem;
 }
 
 .menu-button {
   height: 34px;
-  border: none;
-  border-radius: 25px;
   padding: 8px 12px;
+  border-radius: 25px;
+  border: none;
 }
 
 .main-content {
