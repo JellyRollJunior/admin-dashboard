@@ -27,6 +27,7 @@
   grid-template-columns: var(--sidebar-width) 1fr;
   grid-template-rows: var(--header-height) 1fr;
   height: 100vh;
+  background-color: #d5a876;
 }
 
 .sidebar {
@@ -173,6 +174,11 @@
   color: var(--header-button-text-color);
 }
 
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .main-content {
   --secondary-content-height: 400px;
   --secondary-content-width: 300px;
@@ -182,6 +188,7 @@
   --card-button-size: 24px;
   --card-gap: 24px;
 
+  max-width: 1500px;
   padding: 20px 20px 100px 20px;
   display: grid;
   grid-template-columns: 1fr var(--secondary-content-width);
