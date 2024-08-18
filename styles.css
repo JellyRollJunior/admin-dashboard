@@ -79,8 +79,9 @@
   display: grid;
   grid-template-columns: var(--button-size) 1fr var(--button-size) var(--user-icon-size) 140px;
   gap: 24px;
-  margin-bottom: 24px;
   align-items: center;
+  margin-bottom: 24px;
+  padding-right: 24px;
 }
 
 .icon-button {
@@ -131,7 +132,7 @@
 
 .bottom-header {
   --user-icon-size: 60px;
-  --button-size: 85px;
+  --button-size: 95px;
 
   margin-right: 30px;
   display: grid;
@@ -154,7 +155,7 @@
 }
 
 .menu-button {
-  height: 34px;
+  height: 40px;
   padding: 8px 12px;
   border-radius: 25px;
   border: none;
